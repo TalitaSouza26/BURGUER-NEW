@@ -3,7 +3,7 @@ let input = document.querySelector('input')
 
 const contatos = [
 
-    { name: 'X-Bacon', price: 34.00, vegan: false, src: './css/Assets/X-Bacon.jpg', descricao: 'bacon frlowók ojwlodnlw jfwqjfwqopfj krép keoojope4kpokop kpo4kt 4poktoek oewm4otk4ok' },
+    { name: 'X-Bacon', price: 34.00, vegan: false, src: './css/Assets/X-bacon.jpg', descricao: 'bacon, pão, queijo, alface, tomate, ovo, batata palha, maionese, catchup' },
     { name: 'X-Bahia', price: 30.00, vegan: false, src: './css/Assets/X-Bahia.jpg' },
     { name: 'X-Barriga', price: 34, vegan: false, src: './css/Assets/X-Barriga.jpg' },
     { name: 'X-Guloso', price: 50, vegan: false, src: './css/Assets/X-Guloso.jpg' },
