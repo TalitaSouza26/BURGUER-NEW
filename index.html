@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="boximg">
+            <img src="./css/Assets/burguerlogo.png" alt="" class="logoum">
+            <img src="./css/Assets/logo2.png" alt="" class="logodois">
+        </div>
+        <div class="menu">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+
+        <div class="navheader" id="nav">
+            <ul class="links">
+                <li class="boxlink mostrar"><a href="">Início</a></li>
+                <li class="boxlink"><a href="#cp">Cardápio</a></li>
+                <li class="boxlink lilink">
+                    <div class="dropdown-content">
+                        <a href="https://pt-br.facebook.com/" target="_blank"><img src="./css/Assets/pngwing.com (44).png" alt="img" class="imgicon"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="./css/Assets/pngwing.com (43).png" alt="img" class="imgicon"></a>
+                    </div>
+                    <a class="redes" href="#">Redes</a>
+                </li>
+                <li class="boxlink"><a href="">Contato</a></li>
+            </ul>
+        </div>
+        <div class="espaco">
+        </div>
+    </header>
+
+    <section class="container">
+        <img src="./css/Assets/pngwing.com (6).png" alt="" class="maonoburguer">
+        <div class="textprincipal">
+            <img class="logoname" src="./css/Assets/BurguerTs1.png" alt="">
+            <button>PEÇA JÁ</button>
+        </div>
+        <div class="boxwpp">
+            <div class="wpp">
+                <a href="tel:+557399125197" class="nmrwpp">
+                    <img src="./css/Assets/pngwing.com (41).png" alt="">
+                </a>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cardapio">
+        <div class="cardapiocompleto" id="cp">
+            <div class="boximgcardapio">
+                <img class="imgC" src="./css/Assets/CardapioTS.png" alt="">
+                <div class="boxlinkop">
+                    <a href=""><img src="./css/Assets/3.png" alt="" class="combo"></a>
+                    <a href=""><img src="./css/Assets/4.png" alt="" class="combo"></a>
+                    <div class="boxinput">
+                        <input type="text" placeholder="Procurar Hamburguer">
+                        <!-- <img src="./css/Assets/123pr.jpg" alt="" class="serch"> -->
+                    </div>
+                    <button id="btnprocura" onclick="btnn()">procurar</button>
+                </div>
+            </div>
+
+            <div class="cliquecardapio">
+                <ul class="burguers" id="listaCardapio">
+                   <li class="boxburguers">
+                    <a href="" class="linkProduto">
+                        <img src="./css/Assets/X-desfiado.jpg" alt="" class="imgProduto" >
+                        <p class="descrition">
+                          X-desfiado
+                        </p>
+                        <p class="price">
+                           25.00
+                        </p>
+                    </a>
+                   </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+
+    <script src="./cardapio.js"></script>
+    <script src="./responsive.js"></script>
+</body>
+
+</html>
