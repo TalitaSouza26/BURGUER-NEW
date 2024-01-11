@@ -16,6 +16,7 @@
     --color-bar: #f6b142;
     --white: #ffffff;
     --a-color: #ffb642;
+    --modal-color: #232121;
     --max-width: 1200px;
 }
 
@@ -103,14 +104,14 @@ li:hover {
     background-repeat: no-repeat;
 }
 
-.boxwpp{
+.boxwpp {
     position: relative;
-    left:475px;
+    left: 475px;
     top: 290px;
-    
+
 }
 
-.wpp{
+.wpp {
     background: white;
     border-radius: 10px;
     height: 60px;
@@ -149,7 +150,7 @@ button:active {
 
 /* cardapio */
 
-.cardapio{
+.cardapio {
     background-image: url(./Assets/X-BACON.png);
     background-size: cover;
     height: 100vh;
@@ -167,7 +168,7 @@ button:active {
 .cliquecardapio {
     overflow: scroll;
     margin-top: 20px;
-    border: solid  var(--background-colorheader);
+    border: solid var(--background-colorheader);
     height: 55vh;
 }
 
@@ -185,46 +186,54 @@ button:active {
     justify-content: center;
 }
 
-.boxlinkop{
+.boxlinkop {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 50vw;
 }
 
-.combo{
+.combo {
     width: 150px;
 
 }
 
-.combo:active{
+.combo:active {
     scale: 1.1;
 }
 
-input{
+input {
     border: none;
     width: 240px;
     height: 35px;
     background: transparent;
-    border-bottom: solid 1px #ffffff;
- 
+    border-bottom: solid 1px var(--white);
+    color: var(--white);
+
+}
+
+input:focus {
+    outline: none;
 }
 
 
-::placeholder{
+
+::placeholder {
     color: white;
+    font-weight: 200px;
     padding: 10px;
 }
 
-.boxinput{
+.boxinput {
     display: flex;
+    gap: 20px;
 }
 
-.boxinput > img{
+.boxinput>img {
     width: 40px;
 }
 
-#btnprocura{
+#btnprocura {
     width: 80px;
     font-size: 15px;
     border-radius: 5px;
@@ -250,11 +259,11 @@ input{
     justify-content: center;
     align-items: center;
     display: grid;
-    grid-template-columns:repeat(5, 200px);
+    grid-template-columns: repeat(5, 200px);
 }
 
 .boxburguers {
-    border: 2px solid #f9f9f9;
+    border: 2px solid var(--white);
     border-radius: 5px;
     width: fit-content;
     margin: 20px;
@@ -295,7 +304,7 @@ input{
     display: none;
     position: absolute;
     top: 30px;
-    background: #f9f9f9;
+    background: var(--white);
 
     z-index: 1;
     border-radius: 5px;
@@ -306,19 +315,76 @@ input{
     justify-content: center;
 }
 
-.imgicon{ 
+.imgicon {
     width: 40px;
 }
 
-.imgicon:active{
+.imgicon:active {
     scale: 1.1;
 }
 
-h5{
+h5 {
     font-size: 9px;
 }
 
-@media (width < 800px) {
+.mensagem {
+    font-size: 25px;
+    color: var(--white);
+}
+
+/* alert modal */
+
+.background {
+    background: radial-gradient(circle at 50% 50%, #8d125d 20%, #45062d);
+    transition: .1s all ease-in-out;
+}
+
+.modal {
+    max-width: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 100px auto;
+    display: none;
+    right: 0;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 15px -2px rgba(255, 255, 255, 0.50);
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 15px;
+
+}
+
+.modal>div {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.ativo {
+    display: block;
+}
+
+.titulo-modal {
+    font-size: 2rem;
+    color: var(--modal-color);
+}
+
+.paragrafo-modal {
+    color: var(--modal-color);
+}
+
+.fecharModal-js {
+    border-radius: 10px;
+    width: 120px;
+    font-size: 12px;
+}
+
+
+@media (width < 990px) {
     header {
         width: 100%;
         height: 12vh;
@@ -385,21 +451,40 @@ h5{
         align-items: center;
     }
 
-    .textprincipal{
+    .textprincipal {
         margin-bottom: 180px;
     }
 
-        
-        .burguers{
-            
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
 
-        .boxwpp{
-            display: none;
-        }
+    .burguers {
 
-        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .boxwpp {
+        display: none;
+    }
+
+    .boximgcdp {
+        display: flex;
+    }
+
+    .boxlinkop {
+        flex-wrap: wrap;
+        display: flex;
+
+    }
+
+    .boxinput {
+        display: flex;
+        gap: 20px;
+
+    }
+
+    input {
+        width: 150px;
+    }
+
 
 }

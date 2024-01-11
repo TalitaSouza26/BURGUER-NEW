@@ -35,12 +35,14 @@
                 <li class="boxlink"><a href="#cp">Cardápio</a></li>
                 <li class="boxlink lilink">
                     <div class="dropdown-content">
-                        <a href="https://pt-br.facebook.com/" target="_blank"><img src="./css/Assets/pngwing.com (44).png" alt="img" class="imgicon"></a>
-                        <a href="https://www.instagram.com/" target="_blank"><img src="./css/Assets/pngwing.com (43).png" alt="img" class="imgicon"></a>
+                        <a href="https://pt-br.facebook.com/" target="_blank"><img
+                                src="./css/Assets/pngwing.com (44).png" alt="img" class="imgicon"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img
+                                src="./css/Assets/pngwing.com (43).png" alt="img" class="imgicon"></a>
                     </div>
                     <a class="redes" href="#">Redes</a>
                 </li>
-                <li class="boxlink"><a href="">Contato</a></li>
+                <li class="boxlink"><a href="tel:+557399125197">Contato</a></li>
             </ul>
         </div>
         <div class="espaco">
@@ -51,14 +53,24 @@
         <img src="./css/Assets/pngwing.com (6).png" alt="" class="maonoburguer">
         <div class="textprincipal">
             <img class="logoname" src="./css/Assets/BurguerTs1.png" alt="">
-            <button>PEÇA JÁ</button>
+            <button class="abrirModal-js">CLIQUE AQUI</button>
+            <div class="modal">
+                <div class="boxinfo">
+                    <h4 class="titulo-modal">Projeto em andamento</h4>
+                    <button class="fecharModal-js" type="button">Fechar</button>
+                </div>
+
+                <p class="paragrafo-modal">Este projeto está em andamento, acompanhe o sua atualização em breve !</p>
+            </div>
+
         </div>
+
         <div class="boxwpp">
             <div class="wpp">
                 <a href="tel:+557399125197" class="nmrwpp">
                     <img src="./css/Assets/pngwing.com (41).png" alt="">
                 </a>
-                
+
             </div>
         </div>
     </section>
@@ -69,35 +81,40 @@
             <div class="boximgcardapio">
                 <img class="imgC" src="./css/Assets/CardapioTS.png" alt="">
                 <div class="boxlinkop">
-                    <a href=""><img src="./css/Assets/3.png" alt="" class="combo"></a>
-                    <a href=""><img src="./css/Assets/4.png" alt="" class="combo"></a>
+                    <div class="boximgcdp">
+                        <a href=""><img src="./css/Assets/3.png" alt="" class="combo"></a>
+                        <a href=""><img src="./css/Assets/4.png" alt="" class="combo"></a>
+                    </div>
                     <div class="boxinput">
                         <input type="text" placeholder="Procurar Hamburguer">
-                        <!-- <img src="./css/Assets/123pr.jpg" alt="" class="serch"> -->
+                        <button id="btnprocura" onclick="btnn()">procurar</button>
                     </div>
-                    <button id="btnprocura" onclick="btnn()">procurar</button>
+
                 </div>
             </div>
 
             <div class="cliquecardapio">
                 <ul class="burguers" id="listaCardapio">
-                   <li class="boxburguers">
-                    <a href="" class="linkProduto">
-                        <img src="./css/Assets/X-desfiado.jpg" alt="" class="imgProduto" >
-                        <p class="descrition">
-                          X-desfiado
-                        </p>
-                        <p class="price">
-                           25.00
-                        </p>
-                    </a>
-                   </li>
+                    <li class="boxburguers">
+                        <a href="" class="linkProduto">
+                            <img src="./css/Assets/X-desfiado.jpg" alt="" class="imgProduto">
+                            <p class="descrition">
+                                X-desfiado
+                            </p>
+                            <p class="price">
+                                25.00
+                            </p>
+                        </a>
+                    </li>
                 </ul>
             </div>
+            <p class="mensagem">
+
+            </p>
         </div>
     </section>
     <script src="./script.js"></script>
-
+    <script src="modal.js"></script>
     <script src="./cardapio.js"></script>
     <script src="./responsive.js"></script>
 </body>
