@@ -1,4 +1,4 @@
-<h1>Landing HamburgerTs</h1>
+<h1>Landing Page HamburgerTs</h1>
 
 https://talitasouza26.github.io/BURGUER-NEW/
 
