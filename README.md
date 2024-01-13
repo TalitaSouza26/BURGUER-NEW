@@ -15,4 +15,6 @@ https://talitasouza26.github.io/BURGUER-NEW/
     </li>
   </ul>
 </h3>
-![Captura de tela 2024-01-10 141157](https://github.com/TalitaSouza26/BURGUER-NEW/assets/136650770/921e04a6-5da8-4613-87d5-abc2b074f56c)
+
+
+![Captura de tela 2024-01-10 141157](https://github.com/TalitaSouza26/BURGUER-NEW/assets/136650770/5516addd-b7f3-4727-9a58-e8aca38118ad)
