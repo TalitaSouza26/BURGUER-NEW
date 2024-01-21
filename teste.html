@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Clientes</title>
+</head>
+<body>
+
+  <h2>Cadastro de Cliente</h2>
+
+  <label for="nomeInput">Nome:</label>
+  <input type="text" id="nomeInput" placeholder="Digite o nome">
+
+  <label for="produtoInput">Produto:</label>
+  <input type="text" id="produtoInput" placeholder="Digite o produto">
+
+  <button onclick="salvarInformacoes()">Salvar</button>
+
+  <hr>
+
+  <h2>Pesquisar Cliente</h2>
+
+  <label for="pesquisaInput">Pesquisar por nome:</label>
+  <input type="text" id="pesquisaInput" placeholder="Digite o nome">
+
+  <button onclick="pesquisarCliente()">Pesquisar</button>
+
+  <div id="resultado"></div>
+
+  <script>
+    function salvarInformacoes() {
+      var nome = document.getElementById("nomeInput").value;
+      var produto = document.getElementById("produtoInput").value;
+
+      // Verificar se há dados salvos
+      var clientes = JSON.parse(localStorage.getItem("clientes")) || [];
+
+      // Adicionar novo cliente
+      clientes.push({ nome, produto });
+
+      // Salvar no localStorage
+      localStorage.setItem("clientes", JSON.stringify(clientes));
+
+      alert("Informações salvas com sucesso!");
+    }
+
+    function pesquisarCliente() {
+      var pesquisaNome = document.getElementById("pesquisaInput").value;
+      var clientes = JSON.parse(localStorage.getItem("clientes")) || [];
+
+      // Procurar cliente pelo nome
+      var clienteEncontrado = clientes.find(function(cliente) {
+        return cliente.nome.toLowerCase() === pesquisaNome.toLowerCase();
+      });
+
+      // Exibir resultado
+      var resultadoDiv = document.getElementById("resultado");
+      resultadoDiv.innerHTML = "";
+
+      if (clienteEncontrado) {
+        resultadoDiv.innerHTML = "<p>Nome: " + clienteEncontrado.nome + "</p><p>Produto: " + clienteEncontrado.produto + "</p>";
+      } else {
+        resultadoDiv.innerHTML = "<p>Cliente não encontrado.</p>";
+      }
+    }
+  </script>
+
+</body>
+</html>

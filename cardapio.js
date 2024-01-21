@@ -29,7 +29,7 @@ const burguer = [
 
 function btnn() {
     let hamburguerEncontrado = false;
-    const listaCardapio = document.getElementById('listaCardapio');
+    const listaCardapio = document.querySelector('.burguers')
 
     burguer.forEach(burguer => {
         if (input.value.toLowerCase() === burguer.name.toLowerCase()) {

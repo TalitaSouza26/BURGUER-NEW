@@ -28,11 +28,10 @@
             <div id="bar2" class="bar"></div>
             <div id="bar3" class="bar"></div>
         </div>
-
         <div class="navheader" id="nav">
             <ul class="links">
                 <li class="boxlink mostrar"><a href="">Início</a></li>
-                <li class="boxlink"><a href="#cp">Cardápio</a></li>
+                <li class="boxlink" id="mostrar"><a href="#cp">Cardápio</a></li>
                 <li class="boxlink lilink">
                     <div class="dropdown-content">
                         <a href="https://pt-br.facebook.com/" target="_blank"><img
@@ -82,20 +81,25 @@
                 <img class="imgC" src="./css/Assets/CardapioTS.png" alt="">
                 <div class="boxlinkop">
                     <div class="boximgcdp">
-                        <a href=""><img src="./css/Assets/3.png" alt="" class="combo"></a>
-                        <a href=""><img src="./css/Assets/4.png" alt="" class="combo"></a>
+
+                        <a href="#cp"><img src="./css/Assets/3.png" alt="" class="combo" id="filter"></a>
+
+                        <a href="#cp"><img src="./css/Assets/4.png" alt="" class="combo" id="VeganFilter"></a>
                     </div>
                     <div class="boxinput">
                         <input type="text" placeholder="Procurar Hamburguer">
                         <button id="btnprocura" onclick="btnn()">procurar</button>
+                        <button id="btnprocura" class="show-all">10%</button>
                     </div>
 
                 </div>
             </div>
 
+
+
             <div class="cliquecardapio">
-                <ul class="burguers" id="listaCardapio">
-                    <li class="boxburguers">
+                <ul class="burguers">
+                    <!-- <li class="boxburguers">
                         <a href="" class="linkProduto">
                             <img src="./css/Assets/X-desfiado.jpg" alt="" class="imgProduto">
                             <p class="descrition">
@@ -105,7 +109,7 @@
                                 25.00
                             </p>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <p class="mensagem">
@@ -113,6 +117,7 @@
             </p>
         </div>
     </section>
+
     <script src="./script.js"></script>
     <script src="modal.js"></script>
     <script src="./cardapio.js"></script>

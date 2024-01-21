@@ -21,7 +21,7 @@
 }
 
 body {
-    background: radial-gradient(circle at 50% 50%, #8d125d 20%, #45062d);
+    background: radial-gradient(circle at 50% 50%, #d51a8d 20%, #5e073d);
 
 }
 
@@ -70,7 +70,7 @@ li:hover {
 
 .espaco {
 
-    width: 150px;
+    width: 250px;
     height: 10px;
 
 }
@@ -143,6 +143,7 @@ button {
     font-size: 20px;
     cursor: pointer;
 }
+
 
 button:active {
     background: var(--background-colorheader);
@@ -368,9 +369,15 @@ h5 {
     display: block;
 }
 
+
 .titulo-modal {
     font-size: 2rem;
     color: var(--modal-color);
+}
+
+.buttonclick{
+    width: 150px;
+    font-size: 1rem;
 }
 
 .paragrafo-modal {
@@ -383,8 +390,37 @@ h5 {
     font-size: 12px;
 }
 
+@media (width < 1150px)
 
-@media (width < 990px) {
+{
+   
+       
+    .maonoburguer{
+        width: 390px;
+    }
+
+    .logoname{
+        width: 400px;
+    }
+
+    .container{
+        height: 100%;
+    }
+
+    .cardapio{
+        height: 100%;
+    }
+
+    .abrirModal-js{
+        width: 160px;
+        font-size: 15px;
+    }
+
+}
+
+
+
+@media (width < 800px) {
     header {
         width: 100%;
         height: 12vh;
