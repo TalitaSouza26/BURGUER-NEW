@@ -35,7 +35,7 @@ const oterAll = document.querySelector('#oterCardapio')
 
 
 function mostrarAll() {
-  let myli = '';
+  let myli = ''
 
   menuOptions.forEach((product) => {
     myli += `
