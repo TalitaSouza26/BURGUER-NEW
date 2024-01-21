@@ -31,10 +31,11 @@ const buttonAll = document.querySelector('#mostrar')
 const filterAll = document.querySelector('#filter')
 const veganFilter = document.querySelector('#VeganFilter')
 const oterAll = document.querySelector('#oterCardapio')
-let myli = '';
+
 
 
 function mostrarAll() {
+  let myli = '';
 
   menuOptions.forEach((product) => {
     myli += `
