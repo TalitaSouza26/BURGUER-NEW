@@ -521,6 +521,7 @@ h5 {
     .cliquecardapio {
        width: 90%;
         border: solid var(--background-colorheader);
+        margin-bottom: 50px;
         
     }
 
