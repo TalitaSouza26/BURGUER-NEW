@@ -30,6 +30,7 @@ const buttonShowAll = document.querySelector('.show-all');
 const buttonAll = document.querySelector('#mostrar')
 const filterAll = document.querySelector('#filter')
 const veganFilter = document.querySelector('#VeganFilter')
+const oterAll = document.querySelector('#oterCardapio')
 let myli = '';
 
 
@@ -137,3 +138,4 @@ buttonAll.addEventListener('click', mostrarAll)
 buttonShowAll.addEventListener('click', mapAllItems);
 filterAll.addEventListener('click', filterAllitems)
 veganFilter.addEventListener('click', filterVeganItems)
+oterAll.addEventListener('click', mostrarAll  )

@@ -485,6 +485,7 @@ h5 {
         display: flex;
         justify-content: start;
         align-items: center;
+        height: 100vh;
     }
 
     .textprincipal {
@@ -522,5 +523,20 @@ h5 {
         width: 150px;
     }
 
+    .cliquecardapio {
+       width: 90%;
+        border: solid var(--background-colorheader);
+        
+    }
+
+    .boxburguers {
+        border: 2px solid var(--white);
+        border-radius: 5px;
+        width: fit-content;
+        margin: 20px;
+        width: 130px;
+        height: 135px;
+    
+    }
 
 }
