@@ -425,6 +425,12 @@ h5 {
         align-items: center;
     }
 
+    .burguers {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
 
 
     .bar {
@@ -548,6 +554,10 @@ h5 {
       
         margin-top: 90px;
     }
+
+    .maonoburguer {
+        display: none;
+    }
 }
 
 @media  (width < 750px) {
@@ -556,6 +566,9 @@ h5 {
 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .maonoburguer {
+        display: none;
     }
     
     
@@ -566,6 +579,10 @@ h5 {
 
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .maonoburguer {
+        display: none;
     }
 
 
