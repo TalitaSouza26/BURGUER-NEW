@@ -61,7 +61,7 @@ function mostrarAll() {
 function mapAllItems() {
   const newprice = menuOptions.map((product) => ({
     ...product,
-    price: Math.floor(product.price * 0.9),
+    price: (product.price * 0.9).toFixed(2),
   }));
 
   let lista = '';
@@ -75,7 +75,7 @@ function mapAllItems() {
             ${product.name}
           </p>
           <p class="price">
-            R$ ${product.price}.00
+            R$ ${product.price}
           </p>
         </a>
       </li>`;
